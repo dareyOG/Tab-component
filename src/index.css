@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 48px 96px;
+  position: relative;
+  color: #444;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle {
+  position: absolute;
+  right: 0;
+  background: none;
+  font-size: 30px;
+  padding: 4px;
+}
+
+.tabs {
+  margin-bottom: 8px;
+}
+
+.tab {
+  border-radius: 12px;
+  background-color: #edf2ff;
+  padding: 12px 24px;
+  margin-right: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #364fc7;
+  border: 0.5px solid transparent;
+  transition: all 0.3s;
+}
+
+.tab:hover {
+  color: #364fc7;
+  border: 0.5px dotted #364fc7;
+}
+
+.tab.active {
+  background-color: #364fc7;
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+.tab-content {
+  background-color: #edf2ff;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.tab-content h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: #364fc7;
+}
+
+.tab-content p {
+  font-size: 18px;
+  color: #364fc7;
+}
+
+.tab-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+.tab-actions > button {
+  background: none;
+  color: #4c6ef5;
+  font-size: 14px;
+}
+
+.tab-actions > button:hover {
+  text-decoration: underline;
+}
