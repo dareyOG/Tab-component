@@ -48,7 +48,7 @@ function Tabbed({ content }) {
         <Tab num={2} activeTab={activeTab} onSetActive={handleSetActive} />
         <Tab num={3} activeTab={activeTab} onSetActive={handleSetActive} />
       </div>
-      <TabContent summary={content.at(activeTab).summary} details={content.at(activeTab).details} />
+      <TabContent summary={content.at(activeTab).summary} details={content.at(activeTab).details} key={content.at(activeTab).summary}/>
     </>
   );
 }
